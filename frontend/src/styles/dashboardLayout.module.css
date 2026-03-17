@@ -1,0 +1,56 @@
+.dashboardContainer {
+  display: flex;
+  color: black;
+  height: 90vh;
+}
+
+.dashboardContainer_feedContainer {
+  flex: 0.8;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboardContainer_leftBar {
+  display: flex;
+  flex: 0.2;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.2rem;
+  padding: 2rem 0rem 0rem 2rem;
+  border-right: 2px solid gray;
+}
+
+.sidearOption {
+  width: 100%;
+}
+
+.sidearOption > a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.sidearOption:hover {
+  scale: 1.1;
+}
+
+.sidearOption > a > svg {
+  height: 1.5em;
+  width: 1.5rem;
+  color: white;
+}
+
+.dashboardContainer_rightBar {
+  flex: 0.2;
+  border-left: 2px solid gray;
+}
+
+.rightBar_profile_image {
+  width: 4rem;
+  border-radius: 50%;
+}

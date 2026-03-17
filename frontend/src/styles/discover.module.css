@@ -1,0 +1,40 @@
+.allUserProfile {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.2rem;
+}
+
+.allUserProfile > p {
+  color: white;
+}
+
+.userCard {
+  display: flex;
+  width: 80%;
+  gap: 1.2rem;
+  padding: 1.3rem;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(206, 203, 203);
+  box-shadow: 10px 10px 10px 0 rgba(116, 114, 114, 0.1);
+}
+
+.userCard_details {
+  display: flex;
+  gap: 2rem;
+}
+.userCard_image {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.userCard_requestBtn {
+  background: rgb(84, 84, 225);
+  width: 10rem;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}

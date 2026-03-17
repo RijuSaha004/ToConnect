@@ -1,0 +1,108 @@
+.container {
+  width: 80%;
+  padding: 1.3rem;
+  background: rgb(230, 230, 230);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.backDropContainer {
+  width: 100%;
+  height: 30vh;
+  background: gray;
+  position: relative;
+  border-radius: 20px;
+}
+
+.backDrop {
+  width: 5em;
+  height: 5em;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20%;
+  left: 10%;
+  text-align: center;
+}
+
+.profileContainer_details {
+  padding-top: 5rem;
+}
+
+.upper_details_container {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.card_profileContainer {
+  display: flex;
+}
+
+.card_profileContainer > img {
+  width: 3.4rem;
+  height: auto;
+  height: 3.4rem;
+  object-fit: cover;
+}
+
+.connectedButton {
+  padding-inline: 0.8rem;
+  padding-block: 0.3rem;
+  outline: none;
+  border: 1px solid gray;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.connectBtn {
+  padding-inline: 0.8rem;
+  padding-block: 0.3rem;
+  background: rgb(84, 84, 225);
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.historyCard {
+  width: 100%;
+  height: 100%;
+  background: rgb(208, 208, 208);
+  padding: 10px;
+  height: 15rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.historyCardContainer {
+  display: flex;
+  gap: 1.4rem;
+  padding-top: 1.4rem;
+  height: 12rem;
+  width: 97%;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+}
+
+.historyCardDetails {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 8rem;
+  width: 16rem;
+  min-width: fit-content;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgb(173, 173, 173);
+}

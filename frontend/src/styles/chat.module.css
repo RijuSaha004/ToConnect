@@ -1,0 +1,102 @@
+.chatMainContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.chatLeftBar {
+  flex: 0.3;
+  padding: 1rem;
+  border-right: 1px solid grey;
+  overflow: auto;
+}
+
+.chatUserCard {
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  gap: 2px;
+  border-radius: 10px;
+  background: rgb(78, 75, 75);
+  text-decoration: none;
+  color: black;
+}
+
+.chatUserCard:hover {
+  scale: 1.02;
+}
+
+.chatCard_image {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.chatUserDetails {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5px;
+}
+
+.chatRightBar {
+  max-height: 100%;
+  flex: 0.7;
+  border-right: 1px solid grey;
+  overflow: hidden;
+}
+
+.chatRightBarHeader {
+  background: rgb(78, 75, 75);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.chatHeader_image {
+  width: 7%;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.messegeContainerSection {
+  width: 102%;
+  min-height: 75%;
+  max-height: 75%;
+  padding-inline: 1rem;
+  overflow-y: scroll;
+}
+
+.singleMessegeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 4rem;
+  width: 100%;
+  margin-block: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.sendMessageSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 4rem;
+  padding-inline: 2rem;
+}
+
+.sendMessageSection > input {
+  width: 90%;
+  height: 70%;
+  border-radius: 10px;
+  border: 1px solid gray;
+  outline: none;
+}
+
+.sendMessageBtn {
+  width: 2rem;
+  color: white;
+}

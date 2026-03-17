@@ -1,0 +1,158 @@
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.postContainer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.singleCard {
+  background: rgb(223, 217, 217);
+  width: 60%;
+  border-bottom: 1px solid rgb(179, 179, 179);
+  border-radius: 10px;
+  margin-top: 25px;
+  padding-right: 2rem;
+}
+
+.singleCard_profileContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.2rem;
+}
+
+.userProfileImg {
+  width: 4em;
+  border-radius: 50%;
+}
+
+.singleCard_image {
+  width: 100%;
+  padding-top: 0.6rem;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.singleCard_image > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.profileDetails {
+  width: 100%;
+}
+
+.optionsContainer {
+  display: flex;
+  height: 20%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.singleOption_optionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.singleOption_optionContainer > svg {
+  height: 100%;
+  width: 8%;
+}
+
+/* /////////////////////////////////////////// */
+
+.commentsContainer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgb(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCommentsContainer {
+  height: 80vh;
+  width: 40vw;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  padding: 1.2rem;
+  overflow: hidden;
+}
+
+.allComments {
+  height: 60vh;
+  width: 40vw;
+  overflow-y: scroll;
+  padding-right: 20px;
+}
+
+.postCommentContainer {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.postCommentContainer > input {
+  flex: 0.9;
+  padding-inline: 1.5rem;
+  padding-block: 1.2rem;
+  border: none;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+  color: black;
+}
+
+.postCommentContainer_commentBtn {
+  flex: 0.1;
+  width: fit-content;
+  padding: 1rem;
+  background: rgb(84, 84, 225);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.singleComment {
+  background: rgb(236, 229, 229);
+  padding: 1rem;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.singleComment_profileContainer {
+  display: flex;
+}
+
+.singleComment_profileContainer > img {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.singleComment > p {
+  min-height: 3rem;
+  margin-block: 1rem;
+}
+
+.commentDelete {
+  display: flex;
+  justify-content: end;
+}

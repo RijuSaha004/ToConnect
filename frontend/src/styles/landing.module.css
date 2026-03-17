@@ -1,0 +1,49 @@
+.container {
+  color: white;
+  padding: 1.2rem;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding-inline: 2rem;
+  height: 80vh;
+}
+
+.mainContainer_left {
+  flex: 0.5;
+}
+
+.mainContainer_right {
+  flex: 0.5;
+  border-radius: 20px;
+}
+
+.mainContainer_right > img {
+  width: 600px;
+  border-radius: 40px;
+}
+
+.mainContainer_left > p:nth-child(1) {
+  font-size: 3rem;
+}
+
+.mainContainer_left > p:nth-child(2) {
+  color: #cac3c3;
+  font-size: 1.5rem;
+}
+
+.mainContainer_left > div.homeButton {
+  width: fit-content;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
+  background-color: rgb(84, 84, 225);
+  color: white;
+  border-radius: 5%;
+  padding: 1rem;
+}

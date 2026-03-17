@@ -48,7 +48,8 @@ const userSlice = createSlice({
       state.loggedIn = true;
     },
     userIsNotLoggedIn: (state) => {
-      state.loggedIn = true;
+      state.loggedIn = false;
+      state.user = undefined;
     },
   },
 

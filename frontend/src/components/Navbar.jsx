@@ -11,9 +11,7 @@ const Navbar = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
-    const handleLogout = async () => {
-        console.log("logout");
-        
+    const handleLogout = async () => {        
         const response = await clientServer.post("/user/logout", {})
         await dispatch(userIsNotLoggedIn())
         await dispatch(userReset())

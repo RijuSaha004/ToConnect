@@ -246,7 +246,8 @@ export const uploadProfilePicture = async (req, res) => {
   const userId = req.user._id;
   const user = await User.findOne({ _id: userId });
 
-  const uploadResult = await uploadOnCloudinary(req.file.path);
+  const filePath = path.resolve(req.file.path);
+  const uploadResult = await uploadOnCloudinary(filePath);
 
   user.profilePicture = uploadResult?.secure_url;
   await user.save();
